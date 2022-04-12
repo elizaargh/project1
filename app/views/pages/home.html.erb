@@ -2,5 +2,12 @@
 
 
 <% if @current_user.present? %>
-<h2>Welcome back <%= @current_user.email  %>!</h2>
+<h3> <%= @current_user.email  %>!</h3>
 <% end %>
+
+<h2>Pick Mood: </h2>
+<button> SAD</button> --> pick an activitvy with sad_id and matching user_id present? no, pick from all
+<button> Anxious</button> ---> pick an activitvy with anxious_id ditto with 'sad'
+
+<h2>SHOW activity: </h2>
+delete activity from user-- if they hate cooking, they can delete activity as an option. But give option to return default activities

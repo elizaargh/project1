@@ -20,3 +20,7 @@ Activity.destroy_all
 a1 = Activity.create :name => 'Listen to Music', :theme => 'relaxation'
 a2 = Activity.create :name => 'Learn a new recipe', :theme => 'education'
 puts "#{  Activity.count } activities"
+
+puts "Activities and moods"
+a1.moods << m1 << m2
+a2.moods << m1

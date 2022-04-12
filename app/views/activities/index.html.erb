@@ -1,6 +1,9 @@
-<h1>Activity INDEX PAGE</h1>
+<h1>Activity INDEX PAGE- need to hide this</h1>
 
 <% @activities.each do |activity| %>
-<p> <%= activity.name %> |
-<%= activity.theme %> </p>
-<% end %>
+  <p> <%= activity.name %> |
+  <%= activity.theme %> </p>
+    <% activity.moods.each do |mood| %>
+    <span>   <%= mood.name %> </span> 
+    <% end %>
+  <% end%>

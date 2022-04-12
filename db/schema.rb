@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_11_021638) do
+ActiveRecord::Schema.define(version: 2022_04_11_065832) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,9 +22,9 @@ ActiveRecord::Schema.define(version: 2022_04_11_021638) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "activities_moods", force: :cascade do |t|
-    t.integer "activities_id"
-    t.integer "moods_id"
+  create_table "activities_moods", id: false, force: :cascade do |t|
+    t.integer "activity_id"
+    t.integer "mood_id"
   end
 
   create_table "activities_users", force: :cascade do |t|

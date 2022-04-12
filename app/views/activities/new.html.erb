@@ -1,0 +1,17 @@
+<h1>New Activity</h1>
+
+<%= form_for @activity do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+ <%= f.label :theme %>
+    <%= f.text_field :theme %>
+    <%=  f.collection_check_boxes :mood_ids, Mood.all, :id, :name%>
+
+
+<h2>Utimately make a select from themes!</h2>
+<h1>stretch goal</h1>
+<p>Would be cool to have a PRIVATE button. So user can save personal choices freely. 
+But a community one would censor any violent/disturbing/harmful content!</p>
+
+    <%= f.submit %>
+<% end %>
