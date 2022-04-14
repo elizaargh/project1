@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get '/activities' => 'activities#index'
   get '/activities/show' => 'activities#show'
   get '/activities/new' => 'activities#new' 
+  get '/show' => 'pages#show'
 end
 
 

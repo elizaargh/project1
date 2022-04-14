@@ -1,13 +1,57 @@
-<h4>User Home Page</h1>
+<!--<h4>User Home Page</h1>
 
 
-<% if @current_user.present? %>
-<h3> <%= @current_user.email  %>!</h3>
-<% end %>
+<% if @current_user.present? %> 
+ <h3> <%= @current_user.email  %>!</h3> -->
 
-<h2>Pick Mood: </h2>
-<button> SAD</button> --> pick an activitvy with sad_id and matching user_id present? no, pick from all
-<button> Anxious</button> ---> pick an activitvy with anxious_id ditto with 'sad'
 
-<h2>SHOW activity: </h2>
-delete activity from user-- if they hate cooking, they can delete activity as an option. But give option to return default activities
+ <h2>How are you feeling?</h2>
+
+<!--<% @moods.each do |mood| %>
+      <p><%= mood.name %>  </p>
+
+<% end%>
+   <% end%> -->
+  <!--<div class="row align-items-center">
+<div class="row"> -->
+   <% @moods.each_with_index do |mood, index| %>
+
+      <p><%=link_to mood.name, mood %>  </p>
+<% end%>
+
+  
+
+ <!-- BOOTSRAP STUFF "NEED A COUNTER?!?! WHAT. EACH WITH INDEX 
+<div class="row align-items-center">
+<div class="row">
+  <div class="col-6 col-sm-3">Sad</div>
+  <div class="col-6 col-sm-3">Hungover</div>
+  <div class="col-6 col-sm-3">Invisible</div>
+  <div class="col-6 col-sm-3">Gross</div>
+  
+
+  <div class="w-100"></div>
+  <div class="col-6 col-sm-3">Empty</div>
+  <div class="col-6 col-sm-3">Lost</div>
+  <div class="col-6 col-sm-3">Imposter</div>
+  <div class="col-6 col-sm-3">Spooky</div>
+
+  <div class="w-100"></div>
+  <div class="col-6 col-sm-3">Tricked</div>
+  <div class="col-6 col-sm-3">Tantrum</div>
+  <div class="col-6 col-sm-3">Abandoned</div>
+  <div class="col-6 col-sm-3">Butthurt</div>
+
+  <div class="w-100"></div>
+  <div class="col-6 col-sm-3">Heartbreak</div>
+  <div class="col-6 col-sm-3">poo</div>
+  <div class="col-6 col-sm-3">Enraged</div>
+  <div class="col-6 col-sm-3">#$&#*W$@!!!</div>
+
+  <div class="w-100"></div>
+  <div class="col-6 col-sm-3">Annoying</div>
+  <div class="col-6 col-sm-3">Needy</div>
+  <div class="col-6 col-sm-3">Fragile</div>
+  <div class="col-6 col-sm-3">Mourning</div>
+</div>
+</div> 

@@ -1,0 +1,8 @@
+<h1><%=   @activity.name%></h1>
+
+others you may enjoy:
+<% @activities.each do |a| %>
+<% if a.name != @activity.name%>
+<p>  <%= a.name %></p>
+<% end%>
+<% end%>

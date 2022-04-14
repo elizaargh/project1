@@ -10,17 +10,19 @@
   </head>
 
   <body>
+<div class="container">
 
-  <%= link_to "home", root_path %>
-    <% if @current_user.present? %>
-       <%=  link_to "moods", moods_path%> |
-        <%=  link_to "activities", activities_path%>
-         <%=  link_to "Add new activity", new_activity_path%> |
-     <%= link_to "log out",  login_path, :method => 'delete'%>
-   <% end %>
-    | <%= link_to "sign up", new_user_path  %>
-   <%=  link_to "sign in", login_path%>
+    <%= link_to "home", root_path %>
+      <% if @current_user.present? %>
+        <%= link_to "moods", moods_path%> |
+          <%=  link_to "activities", activities_path%>
+          <%=  link_to "Add new activity", new_activity_path%> |
+      <%= link_to "log out",  login_path, :method => 'delete'%>
+    <% end %>
+      | <%= link_to "sign up", new_user_path  %>
+    <%=  link_to "sign in", login_path%>
 
     <%= yield %>
+    </div>
   </body>
 </html>
