@@ -17,10 +17,13 @@ m2 = Mood.create :name => 'Anxious'
 m3 = Mood.create :name => 'Miffed'
 m4 = Mood.create :name => 'Demonic Period'
 m5 = Mood.create :name => 'Beige'
-m6 = Mood.create :name => '#*&@#&#*!!'
+m6 = Mood.create :name => 'Furious'
 m7 = Mood.create :name => 'Hoodwinked'
 m8 = Mood.create :name => 'Lonesome'
 m9 = Mood.create :name => 'Dead'
+m10 = Mood.create :name => 'Lazy'
+m11 = Mood.create :name => 'YUCK'
+m12 = Mood.create :name => 'Forlorn'
 puts "#{  Mood.count } moods"
 
 Activity.destroy_all
@@ -90,16 +93,16 @@ a19.moods << m1 << m2 << m4 << m7 << m8 << m9
 a20.moods << m1 << m2 << m5 << m8 << m8
 a21.moods << m5 << m9 << m6
 a22.moods << m1 << m2 << m3 << m5 << m6 << m7 << m8 << m9
-a23.moods << m1 << m2 << m5 << m9
+a23.moods << m1 << m2 << m5 << m9 << m10
 a24.moods << m1 << m7 << m6 
 a25.moods << m3 << m4 << m5 << m6 << m7 << m9
 a26.moods << m1 << m2 << m8 
 a27.moods << m1 << m2 << m7
-a28.moods << m1 << m2 << m3 << m4 << m6 
+a28.moods << m1 << m2 << m3 << m4 << m6 <<m11
 a29.moods << m1 << m2 << m9
 a30.moods << m1 << m2 << m9
 a31.moods << m8 << m1
 a32.moods << m1 << m4 << m7
-a33.moods << m5 << m9 
+a33.moods << m5 << m9 << m12
 a34.moods << m9 
 a35.moods << m9 << m6

@@ -1,14 +1,15 @@
 
+
+
 <%= form_for @activity do |f| %>
     <%= f.label :name %>
     <%= f.text_field :name %>
     <%= f.hidden_field :user_id, :value => @current_user.id %>
-    <%= f.label :theme %>
-    <%= f.text_field :theme %>
-    <%=  f.collection_check_boxes :mood_ids, Mood.all, :id, :name%>
-
-<h2>How do i make select from themes?</h2>
-<h2> How does collection_check_boxes work?</h2>
+    <p>    <%= f.label :theme %>
+    <%= f.text_field :theme %> </p>
+    <p>
+    <%=  f.collection_check_boxes :mood_ids, Mood.all, :id, :name, :class => "check"%>
+</p>
 
 
     <%= f.submit %>

@@ -14,16 +14,114 @@
     }
   }
 
-  .row{
+  .row {
      max-width: 60em;
-     background-color: lightcyan;
+     background-color: rgb(255, 255, 255);
+     border: 1em solid rgb(255, 255, 255);
   }
 
 
+  .col-sm-3{
+    background-color: rgb(202, 198, 199);
+  }
   .col-6 {
-    border: solid  darkblue;  
+    border: solid  rgb(255, 255, 255);  
     max-height: 15em;
     max-width: 15em;
+
     line-height: 15em;
     text-align: center;
+
   }
+
+
+  .Sad {
+    background-color: rgba(20, 98, 255, 0.558);
+    color: aqua;
+  
+    // border: solid rgb(249, 249, 249) 1em;
+  }
+
+  a.mood:link {
+    color: white;
+    text-decoration: none;
+    font-family: 'Faster One', cursive;
+    font-size: 2em;
+  }
+  a.link {
+    color: black;
+  }
+
+  a:visited {
+    color: black;
+  }
+
+  a.mood:visited {
+    color: white;
+  }
+
+  a:hover {
+    color: rgb(0, 7, 2);
+  }
+
+  .Anxious {
+    background-color: rgba(50, 65, 95, 0.825);
+    color: aqua;
+    // border: solid rgb(249, 249, 249) 1em;
+  }
+  .Miffed {
+    background-color: rgba(206, 121, 211, 0.825);
+    color: aqua;
+    // border: solid rgb(249, 249, 249) 1em;
+  }
+  .Demonic  {
+    background-color: rgb(44, 10, 57);
+    line-height: 1em;
+    padding-top: 6em;
+ 
+  }
+  .Beige  {
+    background-color: rgb(219, 209, 186);
+    color: aqua;
+    // border: solid rgb(249, 249, 249) 1em;
+  }
+  .Hoodwinked{
+    background-color: rgb(238, 193, 42);
+    color: aqua;
+    // border: solid rgb(249, 249, 249) 1em;
+  }
+  .Lonesome{
+    background-color: rgb(126, 160, 235);
+    color: aqua;
+    // border: solid rgb(249, 249, 249) 1em;
+
+  } .Dead{
+    background-color: rgb(0, 0, 0);
+    color: aqua;
+    // border: solid rgb(249, 249, 249) 1em;
+  } .Lazy{
+    background-color: rgba(105, 179, 233, 0.957);
+    color: aqua;
+    // border: solid rgb(249, 249, 249) 1em;
+  }
+  .YUCK{
+    background-color: rgb(182, 238, 144);
+    color: aqua;
+    // border: solid rgb(249, 249, 249) 1em;
+  }
+  .Forlorn{
+    background-color: rgb(3, 30, 76);
+    color: aqua;
+    // border: solid rgb(249, 249, 249) 1em;
+  }
+  .Furious{
+    background-color: rgb(246, 68, 3);
+    color: aqua;
+    // border: solid rgb(249, 249, 249) 1em;
+  }
+label {
+  color: indianred;
+  
+
+  display: flexbox;
+}
