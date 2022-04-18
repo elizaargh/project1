@@ -1,14 +1,17 @@
-<h1>Activity INDEX PAGE- need to hide this</h1>
+<h1>My Activities</h1>
 
 <% @activities.each do |activity| %>
   <% if activity.user_id == @current_user.id%>
-      <p> <%= activity.name %> |     <%= activity.theme %>   </p>
-
+      <%= link_to "+ edit", edit_activity_path(activity), :class => "edity" %>  <%= activity.name %> |  <%= activity.theme %>
+     <%= button_to "- delete", activity, :class => "deletey", :method => "delete", :data => {:confirm => "U sure dummy?"}%>
+Moods:
       <% activity.moods.each do |mood| %>
-        <span>   <%= mood.name %> </span> 
+        <span>    <%= mood.name %> </span> 
       <% end %>
-  <%= button_to "Delete!", activity, :method => "delete", :data => {:confirm => "U sure dummy?"}%>
-<%= link_to "Edit", edit_activity_path(activity) %>
+  <p>
+        </p>
+
+
   <% end%>
 
 <% end%>

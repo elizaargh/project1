@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get '/activities/show' => 'activities#show'
   get '/activities/new' => 'activities#new' 
   get '/show' => 'pages#show'
+  delete '/activities' => 'activity#destroy'
 end
 
 
