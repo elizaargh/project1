@@ -12,8 +12,8 @@ class MoodsController < ApplicationController
       @mood = Mood.find_by :id => params[:id]
       @activities = @mood.activities
       @activity = @activities.sample
-      
-
+      @post = params[:id]
+    
     end
    
       private
@@ -21,4 +21,4 @@ class MoodsController < ApplicationController
         params.require(:mood).permit(:name)
       end
   end
-  
+                    

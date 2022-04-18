@@ -1,8 +1,17 @@
-<h1><%=   @activity.name%></h1>
+<div class="mood<%= @post %>"> 
+    <div class="activity">  
+     <p id="displayactivity">
+         <%= @activity.name%> 
+     </p>
+    </div>
+</div>
 
-others you may enjoy:
-<% @activities.each do |a| %>
+
+
+<% @activities.each do |a| %>   
 <% if a.name != @activity.name%>
-<p>  <%= a.name %></p>
+ <div class="selection"> <%= a.name %></div>
 <% end%>
+
+
 <% end%>
